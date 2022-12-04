@@ -1,12 +1,9 @@
-# KidsGame
-CMPN-103 Project
+-> TESTCASE.CPP Line160 (Mito)
+-> DEFS.h ENUMS (MITO)
+-> OUTPUT UPLOAD MISSING IMAGES AND CREATE COLOR (MITO)
 
-MITO
-{
-Done: 
-90% of UI_INFO and OUTPUT.CPP
+-> TESTCASE.CPP  test case 3 / 4  (Abdullah and Ingy)
 
-TBD:
-Revise On count and UI_INFO Toolbar Items
-}
-
+->INPUT.CPP COMPLETE PLAYMODE CASES (Abdullah)
+->INPUT.CPP COMPLETE DRAWMODE CASES (Abdullah)
+->INPUT.CPP PERFORM PLAYMODE CHECKS (Abdullah)
