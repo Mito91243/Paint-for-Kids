@@ -154,16 +154,129 @@ int main()
 	///TODO:  
 	//You must add a case for each action (both Draw mode and Play mode actions)
 	//Add cases for the missing actions below
-	do
+		do
 	{
 		ActType = pIn->GetUserAction();
 
 		switch (ActType)
 		{
-		case DRAW_RECT:
-				pOut->PrintMessage("Action: Draw a Rectangle , Click anywhere");
-				break;
+		case SELECT:
+			    pOut->PrintMessage("Action: Select a Figure ");
+			    break;
 
+		case DRAW_RECT:
+			  pOut->PrintMessage("Action: Draw a Rectangle , Click anywhere");
+			  break;
+		
+		case DRAW_SQUARE:
+			    pOut->PrintMessage("Action: Draw a Square , Click anywhere");
+			    break;
+
+		case DRAW_TRIANGLE:
+			   pOut->PrintMessage("Action: Draw a Triangle , Click anywhere");
+			   break;
+
+		case DRAW_HEXAGON:
+			  pOut->PrintMessage("Action: Draw a Hexagon , Click anywhere");
+			  break;
+
+		case DRAW_CIRCLE:
+			  pOut->PrintMessage("Action: Draw a Circle , Click anywhere");
+			  break;
+
+		
+		
+		case COLOR_FILL:
+			  pOut->PrintMessage("Action: Choose a Color For Shape Fill ");
+			  break;
+
+		case COLOR_DRAW:
+			  pOut->PrintMessage("Action: Choose a Color For Drawing ");
+			  break;
+
+		case BLACK:
+			  pOut->PrintMessage("BLACK");
+			  break;
+
+		case ORANGE:
+			  pOut->PrintMessage("ORANGE");
+			  break;
+
+		case YELLOW:
+			  pOut->PrintMessage("YELLOW");
+			  break;
+
+		case RED:
+			  pOut->PrintMessage("RED");
+			  break;
+
+		case GREEN:
+			  pOut->PrintMessage("GREEN");
+			  break;
+
+		case BLUE:
+			  pOut->PrintMessage("BLUE");
+			  break;
+
+		
+		case MOVE:
+			  pOut->PrintMessage("Action: Move Selected Shape ");
+			  break;
+
+		case TO_DELETE:
+			  pOut->PrintMessage("Action: Delete Selected Shape ");
+			  break;
+
+		case UNDO:
+			  pOut->PrintMessage("Action: Undo Last Action ");
+			  break;
+
+		case REDO:
+			  pOut->PrintMessage("Action: Redo Last Action ");
+			  break;
+
+		case CLEARALL:
+			  pOut->PrintMessage("Action: Clear All Figures ");
+			  break;
+
+		case STARTRECORDING:
+			  pOut->PrintMessage("Action: Start Recording ");
+			  break;
+
+		case PAUSERECORDING:
+			  pOut->PrintMessage("Action: Pause Recording ");
+			  break;
+
+		case PLAYRECORDING:
+			  pOut->PrintMessage("Action: Play Recording ");
+			  break;
+
+		case SAVE:
+			  pOut->PrintMessage("Action: Save Current Drawings ");
+			  break;
+
+		case LOAD:
+			  pOut->PrintMessage("Action: Load Existing Drawings ");
+			  break;
+
+		case ADDVOICE:
+			  pOut->PrintMessage("Action: Enable Voice Mode ");
+			  break;
+
+		case PLAY_FIGURES:
+			  pOut->PrintMessage("Action: Figure Types ");
+			  break;
+
+		case PLAY_COLORS:
+			  pOut->PrintMessage("Action: Figure Colors ");
+			  break;
+
+		case PLAY_COLORSANDFIGURES:
+			  pOut->PrintMessage("Action: Figure Types and Colors ");
+			  break;
+
+
+		
 		case STATUS:
 				pOut->PrintMessage("Action: a click on the Status Bar, Click anywhere");
 				break;
