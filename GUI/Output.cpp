@@ -80,29 +80,40 @@ void Output::CreateDrawToolBar() const
 	//To control the order of these images in the menu, 
 	//reoder them in UI_Info.h ==> enum DrawMenuItem
 	string MenuItemImages[DRAW_ITM_COUNT];
-	MenuItemImages[ITM_SELECT] = "images\\MenuItems\\Menu_Select.png";
+	
+	MenuItemImages[ITM_SELECT] = "images\\MenuItems\\Menu_Select.png";  //Select And Shapes
 	MenuItemImages[ITM_RECT] = "images\\MenuItems\\Menu_Rect.jpg";
 	MenuItemImages[ITM_SQUARE] = "images\\MenuItems\\Menu_Square.jpeg";
 	MenuItemImages[ITM_TRIANGLE] = "images\\MenuItems\\Menu_Triangle.jpeg";
 	MenuItemImages[ITM_HEXAGON] = "images\\MenuItems\\Menu_Hexagon.png";
 	MenuItemImages[ITM_CIRCLE] = "images\\MenuItems\\Menu_Circ.jpg";
-	MenuItemImages[ITM_EXIT] = "images\\MenuItems\\Menu_Exit.jpg";
-	MenuItemImages[ITM_FILLCOLOR] = "images\\MenuItems\\Menu_Fill.png";
+	
+	MenuItemImages[ITM_FILLCOLOR] = "images\\MenuItems\\Menu_Fill.png";  //FILL&DRAW And their colors
 	MenuItemImages[ITM_DRAWCOLOR] = "images\\MenuItems\\Menu_Draw.png";
+	MenuItemImages[ITM_Black] = "images\\MenuItems\\Menu_Black.jpeg";
+	MenuItemImages[ITM_Yellow] = "images\\MenuItems\\Menu_Yellow.jpeg";
+	MenuItemImages[ITM_Orange] = "images\\MenuItems\\Menu_Orange.jpeg";
+	MenuItemImages[ITM_Red] = "images\\MenuItems\\Menu_Red.jpeg";
+	MenuItemImages[ITM_Green] = "images\\MenuItems\\Menu_Green.jpeg";
+	MenuItemImages[ITM_Blue] = "images\\MenuItems\\Menu_Blue.jpeg";
+
 	MenuItemImages[ITM_MOVE] = "images\\MenuItems\\Menu_Move.png";
 	MenuItemImages[ITM_DELETE] = "images\\MenuItems\\Menu_Delete.png";
 	MenuItemImages[ITM_UNDO] = "images\\MenuItems\\Menu_Undo.png";
 	MenuItemImages[ITM_REDO] = "images\\MenuItems\\Menu_Redo.png";
 	MenuItemImages[ITM_CLEARALL] = "images\\MenuItems\\Menu_Clear.png";
-	MenuItemImages[ITM_STARTRECORDING] = "images\\MenuItems\\Menu_Startrecording.jpeg";
+	
+	MenuItemImages[ITM_STARTRECORDING] = "images\\MenuItems\\Menu_Startrecording.jpeg";  //Saving&Loading And Recording
 	MenuItemImages[ITM_STOPRECORDING] = "images\\MenuItems\\Menu_Stoprecording.png";
 	MenuItemImages[ITM_PLAYRECORDING] = "images\\MenuItems\\Menu_playrecording.png";
 	MenuItemImages[ITM_SAVEGRAPH] = "images\\MenuItems\\Menu_Save.png";
 	MenuItemImages[ITM_LOADGRAPH] = "images\\MenuItems\\Menu_Load.png";
-	MenuItemImages[ITM_SWITCHTOPLAYMODE] = "images\\MenuItems\\Menu_Switch.png";
+	MenuItemImages[ITM_ADDVOICE] = "images\\MenuItems\\Menu_Voice.png";
+
+	MenuItemImages[ITM_SWITCHTOPLAYMODE] = "images\\MenuItems\\Menu_Switch.png";  //Exit And Switch
 	MenuItemImages[ITM_EXIT] = "images\\MenuItems\\Menu_Exit.jpg";
 
-	//TODO: Prepare images for each menu item and add it to the list----------------------------------------------------------------->DONE(MITO)
+	//TODO: Prepare images for each menu item and add it to the list(DONE)
 
 	//Draw menu item one image at a time
 	for(int i=0; i<DRAW_ITM_COUNT; i++)
@@ -123,9 +134,9 @@ void Output::CreatePlayToolBar() const
 	///TODO: write code to create Play mode menu
 	string MenuItemImages[PLAY_ITM_COUNT];
 	
-	MenuItemImages[ITM_FIGURETYPE] = ""; //------------------------------------------------------------------------------------Allocate Image (MITO)
-	MenuItemImages[ITM_FIGUREFILLCOLOR] = "";
-	MenuItemImages[ITM_FIGURETYPEANDCOLOR] = "";
+	MenuItemImages[ITM_FIGURETYPE] = "images\\MenuItems\\Menu_Figures.png";              //Play Mode Types
+	MenuItemImages[ITM_FIGUREFILLCOLOR] = "images\\MenuItems\\Menu_Colors.png";
+	MenuItemImages[ITM_FIGURETYPEANDCOLOR] = "images\\MenuItems\\Menu_Figuresandcolors.png";
 	MenuItemImages[ITM_SWITCHTODRAW] = "images\\MenuItems\\Menu_Switchtodraw.png";
 
 }
