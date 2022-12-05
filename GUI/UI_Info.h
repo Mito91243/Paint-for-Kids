@@ -23,8 +23,16 @@ enum DrawMenuItem //The items of the Draw menu (you should add more items)
 	ITM_TRIANGLE,
 	ITM_HEXAGON,
 	ITM_CIRCLE,
+	
 	ITM_FILLCOLOR,
 	ITM_DRAWCOLOR,
+	ITM_Black,
+	ITM_Yellow,
+	ITM_Orange,
+	ITM_Red,
+	ITM_Green,
+	ITM_Blue,
+	
 	ITM_MOVE,
 	ITM_DELETE,
 	ITM_UNDO,
@@ -35,13 +43,11 @@ enum DrawMenuItem //The items of the Draw menu (you should add more items)
 	ITM_PLAYRECORDING,
 	ITM_SAVEGRAPH,
 	ITM_LOADGRAPH,
-	ITM_SWITCHTOPLAYMODE,
-	ITM_EXIT,
-
-	//TODO: Add more items names here----------------------------------------------------------------------------------->Done (MITO)
-
-	ITM_EXIT,		//Exit item
+	ITM_ADDVOICE,
 	
+	ITM_SWITCHTOPLAYMODE,
+	ITM_EXIT,		//Exit item
+
 	DRAW_ITM_COUNT		//no. of menu items ==> This should be the last line in this enum
 	
 };
