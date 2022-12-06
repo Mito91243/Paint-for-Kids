@@ -71,6 +71,7 @@ void Output::ClearStatusBar() const
 //////////////////////////////////////////////////////////////////////////////////////////
 void Output::CreateDrawToolBar() const
 {
+        pWind->DrawRectangle (0,0,UI.width,UI.ToolBarHeight);
 
 	UI.InterfaceMode = MODE_DRAW;
 	
@@ -141,6 +142,7 @@ void Output::ClearToolBar() const
 
 void Output::CreatePlayToolBar() const
 {
+        pWind->DrawRectangle (0,0,UI.width,UI.ToolBarHeight)
 	UI.InterfaceMode = MODE_PLAY;
 	///TODO: write code to create Play mode menu
 	
