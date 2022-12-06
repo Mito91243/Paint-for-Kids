@@ -24,7 +24,7 @@ public:
 	void DrawCircle(Point P1, Point P2, GfxInfo CircGfxInfo, bool selected) const;
 	void DrawHexagon(Point P1, GfxInfo RectGfxInfo, bool selected)const;
 	void DrawSquare(Point P1, GfxInfo RectGfxInfo, bool selected)const;
-
+	void ClearToolBar() const;
 	
 	///Make similar functions for drawing all other figure types.
 	
