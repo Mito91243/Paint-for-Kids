@@ -51,6 +51,7 @@ ActionType Input::GetUserAction() const
 
 			switch (ClickedItemOrder)
 			{
+			case ITM_SELECT: return SELECT;
 			case ITM_RECT: return DRAW_RECT;
 			case ITM_SQUARE: return DRAW_SQUARE;
 			case ITM_TRIANGLE: return DRAW_TRIANGLE;
@@ -60,12 +61,12 @@ ActionType Input::GetUserAction() const
 
 			case ITM_FILLCOLOR: return COLOR_FILL;
 			case ITM_DRAWCOLOR: return COLOR_DRAW;
-			case ITM_Black: return BLACK;
-			case ITM_Yellow: return ORANGE;
-			case ITM_Orange: return YELLOW;
-			case ITM_Red: return RED;
-			case ITM_Green: return GREEN;
-			case ITM_Blue: return BLUE;
+			case ITM_Black: return BLACK_;
+			case ITM_Yellow: return ORANGE_;
+			case ITM_Orange: return YELLOW_;
+			case ITM_Red: return RED_;
+			case ITM_Green: return GREEN_;
+			case ITM_Blue: return BLUE_;
 
 
 			case ITM_MOVE: return MOVE;
