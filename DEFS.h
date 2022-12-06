@@ -7,7 +7,7 @@
 enum ActionType //The actions supported (you can add more if needed)
 {
 	SELECT,           //Select
-	
+
 	DRAW_RECT,		  //Draw Shapes
 	DRAW_SQUARE,
 	DRAW_TRIANGLE,
@@ -16,12 +16,12 @@ enum ActionType //The actions supported (you can add more if needed)
 
 	COLOR_FILL,      //Color Actions
 	COLOR_DRAW,
-	BLACK,           //DOuble CHeck COLORS ARE ACTIONTYPES
-	ORANGE,
-	YELLOW,
-	RED,
-	GREEN,
-	BLUE,
+	BLACK_,           //DOuble CHeck COLORS ARE ACTIONTYPES
+	ORANGE_,
+	YELLOW_,
+	RED_,
+	GREEN_,
+	BLUE_,
 
 	MOVE,            //Various Functions
 	TO_DELETE,
@@ -52,7 +52,9 @@ enum ActionType //The actions supported (you can add more if needed)
 };
 
 struct Point	//To be used for figures points
-{ int x,y; };
+{
+	int x, y;
+};
 
 struct GfxInfo	//Graphical info of each figure (you may add more members)
 {
