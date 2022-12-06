@@ -23,7 +23,7 @@ enum DrawMenuItem //The items of the Draw menu (you should add more items)
 	ITM_TRIANGLE,
 	ITM_HEXAGON,
 	ITM_CIRCLE,
-	
+
 	ITM_FILLCOLOR,
 	ITM_DRAWCOLOR,
 	ITM_Black,
@@ -32,7 +32,7 @@ enum DrawMenuItem //The items of the Draw menu (you should add more items)
 	ITM_Red,
 	ITM_Green,
 	ITM_Blue,
-	
+
 	ITM_MOVE,
 	ITM_DELETE,
 	ITM_UNDO,
@@ -44,26 +44,26 @@ enum DrawMenuItem //The items of the Draw menu (you should add more items)
 	ITM_SAVEGRAPH,
 	ITM_LOADGRAPH,
 	ITM_ADDVOICE,
-	
+
 	ITM_SWITCHTOPLAYMODE,
 	ITM_EXIT,		//Exit item
 
 	DRAW_ITM_COUNT		//no. of menu items ==> This should be the last line in this enum
-	
+
 };
 
 enum PlayMenuItem //The items of the Play menu (you should add more items)
 {
 	//Note: Items are **(ordered)** here as they appear in menu
 	//If you want to change the menu items order, change the order here
-	
+
 	//TODO: Add more items names here ----------------------------------------------------------------------------------->Done (MITO) , Just double check no more functions here
 	ITM_FIGURETYPE,
 	ITM_FIGUREFILLCOLOR,
 	ITM_FIGURETYPEANDCOLOR,
 	ITM_SWITCHTODRAW,
 	PLAY_ITM_COUNT		//no. of menu items ==> This should be the last line in this enum 
-	
+
 };
 
 
@@ -75,13 +75,13 @@ __declspec(selectany) //This line to prevent "redefinition error"
 struct UI_Info	//User Interface Info.
 {
 	GUI_MODE InterfaceMode;
-	
+
 	int	width, height,	    //Window width and height
-		wx , wy,			//Window starting coordinates
+		wx, wy,			//Window starting coordinates
 		StatusBarHeight,	//Status Bar Height
 		ToolBarHeight,		//Tool Bar Height (distance from top of window to bottom line of toolbar)
 		MenuItemWidth;		//Width of each item in toolbar menu
-	
+
 
 	color DrawColor;		//Drawing color
 	color FillColor;		//Filling color
@@ -92,7 +92,7 @@ struct UI_Info	//User Interface Info.
 	int PenWidth;			//width of the pen that draws shapes
 
 	/// Add more members if needed
-	
+
 }UI;	//create a global object UI
 
 #endif
