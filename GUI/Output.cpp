@@ -198,6 +198,123 @@ void Output::DrawRect(Point P1, Point P2, GfxInfo RectGfxInfo, bool selected) co
 	pWind->DrawRectangle(P1.x, P1.y, P2.x, P2.y, style);
 	
 }
+void Output::DrawTri(Point P1, Point P2, Point P3, GfxInfo TriGfxInfo, bool selected) const
+{
+	color DrawingClr;
+	if (selected)
+		DrawingClr = UI.HighlightColor; //Figure should be drawn highlighted
+	else
+		DrawingClr = TriGfxInfo.DrawClr;
+
+	pWind->SetPen(DrawingClr, UI.PenWidth);
+	drawstyle style;
+	if (TriGfxInfo.isFilled)
+	{
+		style = FILLED;
+		pWind->SetBrush(TriGfxInfo.FillClr);
+	}
+	else
+		style = FRAME;
+
+
+	pWind->DrawTriangle(P1.x, P1.y, P2.x, P2.y, P3.x, P3.y, style);
+
+}
+void Output::DrawCircle(Point P1, Point P2, GfxInfo CircleGfxInfo, bool selected) const
+{
+	color DrawingClr;
+	if (selected)
+		DrawingClr = UI.HighlightColor; //Figure should be drawn highlighted
+	else
+		DrawingClr = CircleGfxInfo.DrawClr;
+
+	pWind->SetPen(DrawingClr, UI.PenWidth);
+	drawstyle style;
+	if (CircleGfxInfo.isFilled)
+	{
+		style = FILLED;
+		pWind->SetBrush(CircleGfxInfo.FillClr);
+	}
+	else
+		style = FRAME;
+
+	int Radi = 0.0;
+	Radi = sqrt((pow((P1.x - P2.x), 2) + pow((P1.y - P2.y), 2)));
+	pWind->DrawCircle(P1.x, P1.y, Radi, style);
+
+}
+void Output::DrawHexagon(Point P1, GfxInfo hexagonGfxInfo, bool selected)const//side lenght =40
+{
+
+	color DrawingClr;
+	if (selected)
+		DrawingClr = UI.HighlightColor; //Figure should be drawn highlighted
+	else
+		DrawingClr = hexagonGfxInfo.DrawClr;
+
+	pWind->SetPen(DrawingClr, UI.PenWidth);
+	drawstyle style;
+	if (hexagonGfxInfo.isFilled)
+	{
+		style = FILLED;
+		pWind->SetBrush(hexagonGfxInfo.FillClr);
+	}
+	else
+		style = FRAME;
+	int px[6];
+		px[0] = P1.x + 40;
+		px[1] = P1.x + 20;
+		px[2] = P1.x - 20;
+		px[3] = P1.x - 40;
+		px[4] = P1.x - 20;
+		px[5] = P1.x + 20;
+ int py[6];
+		py[0] = P1.y;
+		py[1] = P1.y -(20* sqrt(3));
+		py[2] = P1.y - (20*sqrt(3));
+		py[3] = P1.y;
+		py[4] = P1.y +(20*sqrt(3));
+		py[5] = P1.y +(20* sqrt(3));
+
+		pWind->DrawPolygon(px, py, 6, style);
+
+}
+void Output::DrawSquare(Point P1, GfxInfo squareGfxInfo, bool selected)const //side length =40
+{
+	color DrawingClr;
+	if (selected)
+		DrawingClr = UI.HighlightColor; //Figure should be drawn highlighted
+	else
+		DrawingClr = squareGfxInfo.DrawClr;
+
+	pWind->SetPen(DrawingClr, UI.PenWidth);
+	drawstyle style;
+	if (squareGfxInfo.isFilled)
+	{
+		style = FILLED;
+		pWind->SetBrush(squareGfxInfo.FillClr);
+	}
+	else
+		style = FRAME;
+
+	int px[4];
+		px[0] = P1.x + 20;
+		px[1] = P1.x - 20;
+		px[2] = P1.x - 20;
+		px[3] = P1.x + 20;
+
+	int py[4];
+	    py[0] = P1.y - 20;
+		py[1] = P1.y - 20;
+		py[2] = P1.y + 20;
+		py[3] = P1.y + 20;
+
+
+	pWind->DrawPolygon(px, py, 4, style);
+
+
+}
+
 
 
 //////////////////////////////////////////////////////////////////////////////////////////
