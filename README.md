@@ -1,11 +1,12 @@
-#Mito deadline today 12am
--> TESTCASE.CPP Line160 (Mito) // DONE
--> DEFS.h ENUMS (MITO) // DONE 
--> OUTPUT UPLOAD MISSING IMAGES AND CREATE COLOR (MITO)  // DONE
+# CMPN102-Paint For Kids
+ Programming Techniques Project - first year CUFE students.
 
+ A spin on the traditional snake & ladders game, where monopoly cards are in play to give/take money from players or allow them to purchase certain board squares.  
+ Game features a play mode and a design mode, to create custom playing boards.  
+ Implement game logic and design using OOP concepts.
 
-#ABDULLAH & INGY   deadline tmrw 12am
-->INPUT.CPP COMPLETE PLAYMODE CASES 
-->INPUT.CPP COMPLETE DRAWMODE CASES 
-->INPUT.CPP PERFORM PLAYMODE CHECKS 
--> TESTCASE.CPP  test case 3 / 4
+## Team Members:
+ - Philopateer
+ - Abudllah
+ - Ingy
+ - Mariam
