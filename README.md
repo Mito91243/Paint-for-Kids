@@ -1,12 +1,34 @@
-# CMPN102-Paint For Kids
- Programming Techniques Project - first year CUFE students.
+# OOP-Project-CUFE2022
+---
+ Paint-For-Kids Project :heart::fire: fully coded using C++,C as a Project for Object Oriented Course.. 
+---
+# 🚀 Introduction : 
+---
 
- A spin on the traditional snake & ladders game, where monopoly cards are in play to give/take money from players or allow them to purchase certain board squares.  
- Game features a play mode and a design mode, to create custom playing boards.  
- Implement game logic and design using OOP concepts.
+ - A Fancy ColorFul Application Is an Effective Way To Teach Kids Some Computer Skills.
+Educational games are another enjoyable way for kids teaching.
+In this project (Paint for Kids)👦🔥
 
-## Team Members:
- - Philopateer
- - Abudllah
- - Ingy
- - Mariam
+- Our Application is a Simple Application That Enables Kids Draw Fancy shapes And Also Play Some
+Simple Games With Those Shapes.
+
+- Our Application Should Help a Kid to Draw a Number Of Figures, Fill
+Them With Different Colors, Save And Load a Graph, And So On.
+- The Application Provides a Game Playing Mode To Teach Kids 
+How To Differentiate Between Figures Types, Colors …etc.
+
+---
+# Team of 4:
+- Philopateer
+- Ingy
+- Abdullah
+- Mariam
+
+![test1](https://user-images.githubusercontent.com/40190772/51830239-1325f800-22f8-11e9-9b02-7e1177642eb6.png)
+
+![test2](https://user-images.githubusercontent.com/40190772/51830240-1325f800-22f8-11e9-8171-404b8dee9f93.png)
+
+![test3](https://user-images.githubusercontent.com/40190772/51830249-1ae59c80-22f8-11e9-8228-3475d079b175.png)
+
+
+
